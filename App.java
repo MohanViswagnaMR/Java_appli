@@ -91,10 +91,39 @@ public class App {
     
     //starting point
     public static void main(String[] args) {
-        //input
-        Scanner Myuser = new Scanner(System.in);
         Txt_line("Wlcome to our program", 60);
         Txt_C("Mohan", 60);
         line(60);
+        DataControl data = new DataControl();
+        data.AddData("mohan", "customer");
+        //Room_avalabilty();
+        //Customer_details();
+        //pay();
+
+    }
+
+    private static void Room_avalabilty() {
+        int ch=0;
+        switch (ch){
+            case 1:
+
+                break;
+            case 2:
+                break;
+        }
+
+    }
+
+    public static void pay() {
+        
+    }
+
+    public static void Customer_details() {
+        //input
+        Scanner Myuser = new Scanner(System.in);
+        customer C1 = new customer();
+        Myprint("Enter the name: ", 1);
+        C1.Name = Myuser.next();
+
     }
 }

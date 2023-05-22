@@ -1,0 +1,7 @@
+1. customer info
+2. understanding the recuirment
+3. check the reservation
+4. showing all avabile rooms
+5. conforimg and booking the room
+6. payment
+7. reservation complete
