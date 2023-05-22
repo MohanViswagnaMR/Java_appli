@@ -93,7 +93,8 @@ public class App {
     public static void main(String[] args) {
         //input
         Scanner Myuser = new Scanner(System.in);
-        Txt_line("Welcome to my application", 60);
-        Txt_C("My name is Mohan", 60);
+        Txt_line("Wlcome to our program", 60);
+        Txt_C("Mohan", 60);
+        line(60);
     }
 }
