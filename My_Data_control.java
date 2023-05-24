@@ -3,8 +3,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 class DataControl{
+    public static void id_generator(String Dfile) {
+        
+    }
     public void dataoveride(String user, String Dfile) {
-        String Rec_user = ".\\data\\"+Dfile+"\\"+user+".txt";
+        String Rec_user = ".\\data\\"+Dfile+".txt";
         System.out.println(Rec_user);
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(Rec_user));
@@ -17,7 +20,7 @@ class DataControl{
     }
 
     public static void AddDataline(String user, String Dfile) {
-        String Rec_user = ".\\data\\"+Dfile+"\\"+user+".txt";
+        String Rec_user = ".\\data\\"+Dfile+".txt";
         System.out.println(Rec_user);
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(Rec_user));
