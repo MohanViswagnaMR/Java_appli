@@ -42,25 +42,25 @@ class myutiles{
     public void line(Integer i) {
         i = i-1;
         for(int j = 0; j<i; j++){
-            Myprint("*", 2);
+            Myprint("-", 2);
         }
-        Myprint("*", 1);
+        Myprint("-", 1);
     }
     //text at the center with line
     public void Txt_line(String X, int i) {
         i = (i-2) - X.length();
         int half = i/2;
         for(int j = 0; j<half; j++){
-            Myprint("*", 2);
+            Myprint("-", 2);
         }
         Myprint(" ", 2);
         Myprint(X, 2);
         Myprint(" ", 2);
         for(int j = 0; j<half; j++){
-            Myprint("*", 2);
+            Myprint("-", 2);
         }
         if (X.length()%2==1){
-            Myprint("*", 1);
+            Myprint("-", 1);
         }
         else{
             Myprint("", 1);
