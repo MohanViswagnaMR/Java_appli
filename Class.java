@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-class child{
+class depn{
     String Name, Gender,passport, DOB;
     int Age, ID;
     double EID;
 }
 
-class customer extends child{
+class customer extends depn{
     int adult, child;
 }
 
@@ -20,7 +20,7 @@ class Myfuctiona{
     // 1. customer info
     public void Customer_info() {
         myutiles use = new myutiles();
-        use.Myprint("plase enter the ", 1);
+        use.Txt_C("Customer Deatails", 1);
         
     }
 
