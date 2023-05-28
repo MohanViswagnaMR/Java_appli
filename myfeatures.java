@@ -91,15 +91,16 @@ class myutiles{
         Myprint(" ", 2);
         Myprint(X, 2);
         Myprint(" ", 2);
-        for(int j = 0; j<half; j++){
-            Myprint(" ", 2);
-        }
-        if (X.length()%2==1){
-            Myprint(" ", 1);
-        }
-        else{
-            Myprint("", 1);
-        }
+        // for(int j = 0; j<half; j++){
+        //     Myprint(" ", 2);
+        // }
+        // if (X.length()%2==1){
+        //     Myprint(" ", 1);
+        // }
+        // else{
+        //     Myprint("", 1);
+        // }
+        Myprint("", 1);
     }
 }
 

@@ -87,7 +87,7 @@ public class App {
         }
         use.line(100);
         use.Blank_spc();
-        use.Txt_C("Thank you, and hope we see you again", 1);
+        use.Txt_C("Thank you, and hope we see you again", 100);
         use.Blank_spc();
         use.Txt_line("End of the program", 100);
         

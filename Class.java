@@ -17,9 +17,9 @@ class payment {
 }
 
 class Myfuctiona{
-    //----------------------------------------------Mohan's section----------------------------------------------
+//----------------------------------------------Mohan's section----------------------------------------------
 
-
+    //----------------------------------------------new_reservation
     public void new_reservation() {
         myutiles use = new myutiles();
         use.Blank_spc();
@@ -35,12 +35,18 @@ class Myfuctiona{
         use.line(100);
         // 1. customer info
         Customer_info();
-        use.line(100);
         // 2. understanding the recuirment
-        
+        understanding();
         // 3. check the reservation
-        
+        Room_avalabilty();
+        // 4. showing all avabile rooms
+        // 5. conforimg and booking the room
         // 6. reservation complete
+        use.Txt_C("+---------------------+", 100);
+        use.Txt_C("|Reservation conformed|", 100);
+        use.Txt_C("+---------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
     }
     
     //customer info
@@ -120,21 +126,43 @@ class Myfuctiona{
     }
     
     // 2. understanding the recuirment
+    private static void understanding() {
+        myutiles use = new myutiles();
+        use.Blank_spc();
+        use.Txt_C("--------------------------------------------------", 100);
+        use.Myprint("Enter the number of nights you what to stay", 1);
+
+        use.Myprint("processing:", 2);
+        for(int i=0;i<50;i++){
+            for(Double j=(double) 0;j<100000000;j++){
+                
+            }
+            System.out.print("-");
+        }
+        System.out.println("");
+        use.Blank_spc();
+
+    }
+
     // 3. check the reservation
     private static void Room_avalabilty() {
-        int ch=0;
-        switch (ch){
-            case 1:
-            
-            break;
-            case 2:
-            break;
+        myutiles use = new myutiles();
+        use.Myprint("checking for avalability", 2);
+        for(int i=0;i<50;i++){
+            for(Double j=(double) 0;j<100000000;j++){
+                
+            }
+            System.out.print("-");
         }
+        System.out.println("");
+        use.Blank_spc();
         
     }
 
-    // 4. showing all avabile rooms
-    // 5. conforimg and booking the room
 
-    //----------------------------------------------salena's Section----------------------------------------------
+    //----------------------------------------------Payment
+    //----------------------------------------------upgrade package 
+    
+
+//----------------------------------------------salena's Section----------------------------------------------
 }
