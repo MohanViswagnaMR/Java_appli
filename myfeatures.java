@@ -3,10 +3,25 @@ class myutiles{
     //outputs
     public void Myprint(String X, int y) {
         switch (y) {
-            case 1:  System.out.println(X);
-            break;
-            case 2:  System.out.print(X);
-            break;
+            case 1:  
+                for(int i=0;i<X.length();i++){
+                    for(Double j=(double) 0;j<10000000;j++){
+        
+                    }
+                    System.out.print(X.charAt(i));
+                }
+                System.out.println("");
+
+                break;
+
+            case 2: 
+                for(int i=0;i<X.length();i++){
+                    for(Double j=(double) 0;j<10000000;j++){
+        
+                    }
+                    System.out.print(X.charAt(i));
+                }
+                break;
             default:
             System.out.println("ERROR:(String) there is an error pls look for it"); 
             

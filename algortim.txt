@@ -1,11 +1,38 @@
+by mohan, and salena
 hotel reservation
 
+
+// ----------------------------------------------new reservation
+fro Mohan.
 1. customer info
 2. understanding the recuirment
 3. check the reservation
 4. showing all avabile rooms
 5. conforimg and booking the room
-6. payment
-7. reservation complete
+6. reservation complete
 
-by mohan, and salena
+// ----------------------------------------------cheching in
+for Salena
+
+1. crate a function call check_in
+2. Enter check in code
+
+// ----------------------------------------------checking out
+for Salena
+
+// ----------------------------------------------payment
+for Mohan
+
+// ----------------------------------------------cancelation of reservation
+for Salena
+
+1. create a function call cancelation
+2. desgin
+3. call the function Customer_info
+4. cancelation confomation 
+5. end of the progame
+
+// ----------------------------------------------upgrade package 
+for Mohan
+
+
