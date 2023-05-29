@@ -44,7 +44,7 @@ public class App {
                     break;
                 case 4:
                     // payment
-                    use.Myprint(cho, 1);
+                    MFC.Payment();
                     break;
                 case 5:
                     // cancelation of reservation 
@@ -52,7 +52,7 @@ public class App {
                     break;
                 case 6:
                     //upgrade package 
-                    use.Myprint(cho, 1);
+                    MFC.UpgradePackage();
                     break;
                 case 7: a=0;i++;
                 break;

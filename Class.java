@@ -40,6 +40,9 @@ class Myfuctiona{
         Room_avalabilty();
         // 4. showing all avabile rooms
         // 5. conforimg and booking the room
+        use.Myprint("your Reservation Number: ", 1);
+        use.Txt_C("34567890", 100);
+
         // 6. reservation complete
         use.Txt_C("+---------------------+", 100);
         use.Txt_C("|Reservation conformed|", 100);
@@ -164,9 +167,46 @@ class Myfuctiona{
     
     //----------------------------------------------Payment
     public static void Payment() {
-        
+        myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
+        String a;
+        use.Blank_spc();
+        use.Txt_line("Payment", 100);
+        use.Blank_spc();
+        use.Myprint("Date: ", 2);
+        a =Myin.next();
+        use.Myprint("Invoice No: ", 2);
+        a =Myin.next();
+        use.Myprint("Transaction No: ", 2);
+        a =Myin.next();
+        use.Myprint("The Reservation Number: ", 2);
+        a =Myin.next();
+        use.Myprint("Amount: ", 2);
+        a =Myin.next();
+        use.Blank_spc();
+        use.Txt_C("+--------------------+", 100);
+        use.Txt_C("|  Payment Complete  |", 100);
+        use.Txt_C("+--------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
     }
     //----------------------------------------------upgrade package 
+    public static void UpgradePackage() {
+        myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
+        String a;
+        use.Blank_spc();
+        use.Txt_line("upgrade package", 100);
+        use.Blank_spc();
+        use.Myprint("The Reservation Number: ", 2);
+        a =Myin.next();
+        use.Blank_spc();
+        use.Txt_C("+---------------------------+", 100);
+        use.Txt_C("|  package upgade Complete  |", 100);
+        use.Txt_C("+---------------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
+    }
     
     
 //----------------------------------------------salena's Section----------------------------------------------
