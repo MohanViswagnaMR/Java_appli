@@ -36,11 +36,11 @@ public class App {
                     break;
                 case 2: 
                     //cheching in
-                    use.Myprint(cho, 1);
+                    MFC.Chicking_in();
                     break;
                 case 3: 
                     //checking out
-                    use.Myprint(cho, 1);
+                    MFC.Chicking_out();
                     break;
                 case 4:
                     // payment
@@ -48,7 +48,7 @@ public class App {
                     break;
                 case 5:
                     // cancelation of reservation 
-                    use.Myprint(cho, 1);
+                    MFC.Cancelation();
                     break;
                 case 6:
                     //upgrade package 
@@ -62,18 +62,11 @@ public class App {
                 use.line(100);
                 a = 0;
                 break;
-                
-                // 1. customer info
-                // 2. understanding the recuirment
-                // 3. check the reservation
-                // 4. showing all avabile rooms
-                // 5. conforimg and booking the room
-                // 6. payment
-                // 7. reservation complete
             }
             if(a!=0){
                 use.Blank_spc();
                 use.Myprint("would you like to repeat the process: yes-1 no-0", 1);
+                use.Myprint("-->", 2);
                 a = myin.nextInt();
                 if (a==0){
                     i++;

@@ -18,7 +18,6 @@ class payment {
 
 class Myfuctiona{
 //----------------------------------------------Mohan's section----------------------------------------------
-
     //----------------------------------------------new_reservation
     public void new_reservation() {
         myutiles use = new myutiles();
@@ -85,7 +84,7 @@ class Myfuctiona{
             use.Txt_C("depandeces deatails", 100);
             use.Txt_C("---------------------------------", 100);
         }
-
+        
         a = c1.adult - 1;
         for(int i = 0; i<a;i++){
             System.out.println("Enter the adult "+(i+1));
@@ -98,9 +97,9 @@ class Myfuctiona{
         }
         
         
-
+        
     }
-
+    
     private static void member_details() {
         //input
         myutiles use = new myutiles();
@@ -128,11 +127,14 @@ class Myfuctiona{
     // 2. understanding the recuirment
     private static void understanding() {
         myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
         use.Blank_spc();
         use.Txt_C("--------------------------------------------------", 100);
+        use.Blank_spc();
         use.Myprint("Enter the number of nights you what to stay", 1);
-
-        use.Myprint("processing:", 2);
+        int a = Myin.nextInt();
+        use.Blank_spc();
+        use.Myprint("processing: ", 2);
         for(int i=0;i<50;i++){
             for(Double j=(double) 0;j<100000000;j++){
                 
@@ -143,11 +145,11 @@ class Myfuctiona{
         use.Blank_spc();
 
     }
-
+    
     // 3. check the reservation
     private static void Room_avalabilty() {
         myutiles use = new myutiles();
-        use.Myprint("checking for avalability", 2);
+        use.Myprint("checking for avalability:  ", 2);
         for(int i=0;i<50;i++){
             for(Double j=(double) 0;j<100000000;j++){
                 
@@ -158,11 +160,87 @@ class Myfuctiona{
         use.Blank_spc();
         
     }
-
-
+    
+    
     //----------------------------------------------Payment
+    public static void Payment() {
+        
+    }
     //----------------------------------------------upgrade package 
     
-
+    
 //----------------------------------------------salena's Section----------------------------------------------
+    //----------------------------------------------checking in
+    public void Chicking_in() {
+        myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
+        String a;
+        use.Blank_spc();
+        use.Txt_line("Chicking In", 100);
+        use.Blank_spc();
+        use.Myprint("Date: ", 2);
+        a =Myin.next();
+        use.Myprint("Passport No: ", 2);
+        a =Myin.next();
+        use.Myprint("Emirates ID: ", 2);
+        a =Myin.next();
+        use.Myprint("The Reservation Number: ", 2);
+        a =Myin.next();
+        use.Blank_spc();
+        use.Txt_C("+---------------------+", 100);
+        use.Txt_C("|  Check In Complete  |", 100);
+        use.Txt_C("+---------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
+        
+    }
+    //----------------------------------------------checking out
+    public void Chicking_out() {
+        myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
+        String a;
+        int b;
+        use.Blank_spc();
+        use.Txt_line("Chicking Out", 100);
+        use.Blank_spc();
+        use.Myprint("Date: ", 2);
+        a =Myin.next();
+        use.Myprint("The Reservation Number: ", 2);
+        a =Myin.next();
+        use.Myprint("Payment (yes-1,no-0): ", 2);
+        b =Myin.nextInt();
+        if (b == 0 ){
+            use.Blank_spc();
+            use.Txt_C("Payment need to be done", 100);
+            Payment();
+        }
+        use.Blank_spc();
+        use.Txt_C("+---------------------+", 100);
+        use.Txt_C("|  Check Out Complete |", 100);
+        use.Txt_C("+---------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
+        
+    }
+    //----------------------------------------------cancelation of reservation
+    public void Cancelation() {
+        myutiles use = new myutiles();
+        Scanner Myin = new Scanner(System.in);
+        String a;
+        use.Blank_spc();
+        use.Txt_line("Cancelation of reservation", 100);
+        use.Blank_spc();
+        use.Myprint("Date: ", 2);
+        a =Myin.next();
+        use.Myprint("The Reservation Number: ", 2);
+        a =Myin.next();
+        use.Blank_spc();
+        use.Txt_C("+----------------------+", 100);
+        use.Txt_C("| Reservation Canceled |", 100);
+        use.Txt_C("+----------------------+", 100);
+        use.Blank_spc();
+        use.line(100);
+        
+    }
+
 }

@@ -2,29 +2,47 @@ class myutiles{
     // special features
     //outputs
     public void Myprint(String X, int y) {
-        switch (y) {
-            case 1:  
-                for(int i=0;i<X.length();i++){
-                    for(Double j=(double) 0;j<10000000;j++){
+        int m = 2;
+        switch (m){
+            case 1:
+                switch (y) {
+                    case 1:  
+                        for(int i=0;i<X.length();i++){
+                            for(Double j=(double) 0;j<10000000;j++){
+                
+                            }
+                            System.out.print(X.charAt(i));
+                        }
+                        System.out.println("");
         
-                    }
-                    System.out.print(X.charAt(i));
-                }
-                System.out.println("");
-
-                break;
-
-            case 2: 
-                for(int i=0;i<X.length();i++){
-                    for(Double j=(double) 0;j<10000000;j++){
+                        break;
         
-                    }
-                    System.out.print(X.charAt(i));
+                    case 2: 
+                        for(int i=0;i<X.length();i++){
+                            for(Double j=(double) 0;j<10000000;j++){
+                
+                            }
+                            System.out.print(X.charAt(i));
+                        }
+                        break;
+                    default:
+                    System.out.println("ERROR:(String) there is an error pls look for it"); 
+                    
                 }
                 break;
-            default:
-            System.out.println("ERROR:(String) there is an error pls look for it"); 
-            
+            case 2:
+                switch (y) {
+                    case 1:  
+                        System.out.println(X);
+                        break;
+                    case 2: 
+                        System.out.print(X);
+                        break;
+                    default:
+                    System.out.println("ERROR:(String) there is an error pls look for it"); 
+                    
+                }
+                break;
         }
     }
     public void Myprint(Integer X, int y) {
@@ -86,7 +104,8 @@ class myutiles{
         i = (i-2) - X.length();
         int half = i/2;
         for(int j = 0; j<half; j++){
-            Myprint(" ", 2);
+            System.out.print(" ");
+            //Myprint(" ", 2);
         }
         Myprint(" ", 2);
         Myprint(X, 2);
