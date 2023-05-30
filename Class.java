@@ -72,7 +72,7 @@ class Myfuctiona{
         use.Myprint("Nationality: ", 2);
         c1.Nationality = Myin.next();
         use.Myprint("Emirates ID: ", 2);
-        c1.EID = Myin.nextInt();
+        c1.EID = Myin.nextDouble();
         use.Myprint("Passport: ", 2);
         c1.passport = Myin.next();
         use.Blank_spc();
@@ -119,7 +119,7 @@ class Myfuctiona{
         use.Myprint("Nationality: ", 2);
         c1.Nationality = Myin.next();
         use.Myprint("Emirates ID: ", 2);
-        c1.EID = Myin.nextInt();
+        c1.EID = Myin.nextDouble();
         use.Myprint("Passport: ", 2);
         c1.passport = Myin.next();
         use.Blank_spc();
