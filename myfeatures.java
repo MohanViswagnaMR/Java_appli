@@ -2,8 +2,8 @@ class myutiles{
     // special features
     //outputs
     public void Myprint(String X, int y) {
-        int m = 2;
-        switch (m){
+        int testmode = 2;
+        switch (testmode){
             case 1:
                 switch (y) {
                     case 1:  
